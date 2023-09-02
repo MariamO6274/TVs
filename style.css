@@ -13,7 +13,7 @@ body {
     background-color: #F6FBFD;
     font-family: "Montserrat", sans-serif;
 }
-
+/* main container */
 .container {
     display: flex;
     flex-direction: column;
@@ -23,28 +23,29 @@ body {
     margin: 4rem auto;
     width: 90%;
 }
-
+/* televizia */
 h2 {
     font-size: 2.3rem;
     color:darkgreen;
     padding-bottom: 40px;
 }
-
+/* cards includ 2 divs inside one for imgs and id="streamDiv" for live steam */
 .box {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap; 
+    
+}
+/* div that includes imgs, all img has this class, .store-item */
+.card {
+    width: 200px;
+    padding: 1rem;
     cursor: pointer; 
 }
 
-.store-item {
-    width: 200px;
-    padding: 1rem;
-}
-
-.store-item img {
+.card img {
     width: 100%;
     display: block;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);

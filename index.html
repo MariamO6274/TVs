@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Televizia</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <!-- video plyr style -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Televizia</h2>
-        <div class="box" id="items">
-            <div class="store-item">
-                <img src="https://sul.ge/images/televizia/pirveli-arxi.png" alt="Pirveli arkhi" class="store-image"/>
-            </div>
-              <div class="store-item">
-                <img src="https://sul.ge/images/televizia/tv-formula.png" alt="Formula" class="store-image"/>
-            </div>
-             <div class="store-item">
-                <img src="https://geosaitebi.tv/uploads/posts/2020-10/1602626377_tv-pirveli-gadaxvevit.png" alt="TV 1" class="store-image"/>
-            </div>
-            <div class="store-item">
-                <img src="https://geosaitebi.tv/uploads/posts/2020-10/1602539785_mtavari.png" alt="Mtavari arkhi" class="store-image"/>
-            </div>
-            <div class="store-item">
-                <img src="https://sul.ge/images/televizia/marao.png" alt="Marao" class="store-image"/>
-            </div>
-             <div class="store-item">
-                <img src="https://sul.ge/images/televizia/rustavi2.png" alt="Rustavi2" class="store-image"/>
-            </div>
-              <div class="store-item">
-                <img src="https://sul.ge/images/televizia/basti-bubu.png" alt="Basti bubu" class="store-image"/>
-            </div>
-              <div class="store-item">
-                <img src="https://sul.ge/images/televizia/gds.png" alt="GDS" class="store-image"/>
-            </div>
-              <div class="store-item">
-                <img src="https://sul.ge/images/televizia/imedi.png" alt="Imedi" class="store-image"/>
-            </div>
-            <div class="store-item">
-                <img src="https://sul.ge/images/televizia/euronews-georgia.png" alt="Euro news" class="store-image"/>
-            </div>
-            <div class="store-item">
-                <img src="https://geosaitebi.tv/uploads/posts/2020-10/1602590113_abxazetis-xma-gadaxvevit.png" alt="Apkhazetis khma" class="store-image"/>
-            </div>
-             <div class="store-item">
-                <img src="https://geosaitebi.tv/uploads/posts/2020-10/1602625038_musicbox-gadaxvevit.png" alt="Music box" class="store-image"/>
-            </div>
+      <h2>Televizia</h2>
+
+      <div class="box" id="streamDiv">
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/pirveli-arxi.png"
+            alt="Pirveli arkhi"
+            class="store-image"
+          />
         </div>
+
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/tv-formula.png"
+            alt="Formula"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://geosaitebi.tv/uploads/posts/2020-10/1602626377_tv-pirveli-gadaxvevit.png"
+            alt="TV 1"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://geosaitebi.tv/uploads/posts/2020-10/1602539785_mtavari.png"
+            alt="Mtavari arkhi"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/marao.png"
+            alt="Marao"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/rustavi2.png"
+            alt="Rustavi2"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/basti-bubu.png"
+            alt="Basti bubu"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/gds.png"
+            alt="GDS"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/imedi.png"
+            alt="Imedi"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://sul.ge/images/televizia/euronews-georgia.png"
+            alt="Euro news"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://geosaitebi.tv/uploads/posts/2020-10/1602590113_abxazetis-xma-gadaxvevit.png"
+            alt="Apkhazetis khma"
+            class="store-image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://geosaitebi.tv/uploads/posts/2020-10/1602625038_musicbox-gadaxvevit.png"
+            alt="Music box"
+            class="store-image"
+          />
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
+
+<!-- https://plyr.io/ -->
