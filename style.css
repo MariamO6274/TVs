@@ -28,6 +28,7 @@ h2 {
     color: brown;
     padding-bottom: 40px;
 }
+
 /* cards includ 2 divs inside one for imgs and id="streamDiv" for live steam */
 .box {
     display: flex;
@@ -48,4 +49,32 @@ h2 {
     width: 100%;
     display: block;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* morbenali striqoni */
+.newsSection{
+    padding: 0 30px 0 60px;
+    display: flex;
+}
+#newSectionText{
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: auto 0;
+}
+
+.marqueeText {
+    padding: 0 30px;
+    color:brown;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.nsText{
+    display: inline-block;
+    /* color: rgba(225, 225, 255, 0.5); */
+    padding: 0 10px;
+    font-size: 12px;
+
 }
