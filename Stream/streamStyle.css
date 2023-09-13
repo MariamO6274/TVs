@@ -1,5 +1,7 @@
 body {
-  background-color: #f6fbfd;
+  /* background-color: #f6fbfd; */
+  background: 333;
+  background: linear-gradient(135deg, #000000 0%, #333 48%, #686868 100%);
 }
 
 .homeBtn {
