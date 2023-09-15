@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Video Player</title>
-    <style>
+    <link rel="stylesheet" href="./Video/video.css" />
+    <!-- <style>
       /* CSS for the video player */
       body {
           background-image: linear-gradient(to right, #525252, #3d72b4); 
@@ -51,9 +52,25 @@
         height: 100%;
         background-color: #ff6600;
       }
-    </style>
+    </style> -->
   </head>
   <body>
+    <div class="video-player">
+        <video src="./phily.mp4" class="video"></video>
+        <!-- own controler -->
+        <div class="player-controls">
+            <button class="play-button" title="Play">▶️</button>
+        </div>
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+    </div>
+    <!-- aqean dzveli -->
     <div id="video-container">
       <video id="video" controls>
         <source

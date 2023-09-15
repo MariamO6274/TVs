@@ -1,50 +1,64 @@
+const videoPlayer = document.querySelector(".video-player");
+const video = document.querySelector(".video");
+const playButton = document.querySelector(".play-button");
 
-        const video = document.getElementById('video');
-        const playPauseButton = document.getElementById('play-pause');
-        const backwardButton = document.getElementById('backward');
-        const forwardButton = document.getElementById('forward');
-        const timeDisplay = document.getElementById('time');
-        const volumeControl = document.getElementById('volume');
-        const progressBar = document.getElementById('progress-bar');
+// play and pause button, when we click it's going to check if the video is paused or not
 
-        function togglePlay() {
-            if (video.paused || video.ended) {
-                video.play();
-                playPauseButton.textContent = "⏸";
-            } else {
-                video.pause();
-                playPauseButton.textContent = "▶️";
-            }
-        }
+playButton.addEventListener("click", (e) => {
+  if (video.paused) {
+    video.play();
+    e.target.textContent = "⏸";
+  } else {
+    video.pause();
+    e.target.textContent = "▶️";
+  }
+});
 
-        function backward() {
-            video.currentTime -= 5;
-        }
+// const video = document.getElementById('video');
+// const playPauseButton = document.getElementById('play-pause');
+// const backwardButton = document.getElementById('backward');
+// const forwardButton = document.getElementById('forward');
+// const timeDisplay = document.getElementById('time');
+// const volumeControl = document.getElementById('volume');
+// const progressBar = document.getElementById('progress-bar');
 
-        function forward() {
-            video.currentTime += 5;
-        }
+// function togglePlay() {
+//     if (video.paused || video.ended) {
+//         video.play();
+//         playPauseButton.textContent = "⏸";
+//     } else {
+//         video.pause();
+//         playPauseButton.textContent = "▶️";
+//     }
+// }
 
-        function setVolume() {
-            video.volume = volumeControl.value;
-        }
+// function backward() {
+//     video.currentTime -= 5;
+// }
 
-        function updateProgress() {
-            const currentTime = video.currentTime;
-            const duration = video.duration;
-            const progress = (currentTime / duration) * 100;
-            progressBar.style.width = `${progress}%`;
+// function forward() {
+//     video.currentTime += 5;
+// }
 
-            const currentTimeString = formatTime(currentTime);
-            const durationString = formatTime(duration);
-            timeDisplay.textContent = `${currentTimeString} / ${durationString}`;
-        }
+// function setVolume() {
+//     video.volume = volumeControl.value;
+// }
 
-        function formatTime(time) {
-            const minutes = Math.floor(time / 60);
-            const seconds = Math.floor(time % 60);
-            return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-        }
+// function updateProgress() {
+//     const currentTime = video.currentTime;
+//     const duration = video.duration;
+//     const progress = (currentTime / duration) * 100;
+//     progressBar.style.width = `${progress}%`;
 
-        video.addEventListener('timeupdate', updateProgress);
-   
+//     const currentTimeString = formatTime(currentTime);
+//     const durationString = formatTime(duration);
+//     timeDisplay.textContent = `${currentTimeString} / ${durationString}`;
+// }
+
+// function formatTime(time) {
+//     const minutes = Math.floor(time / 60);
+//     const seconds = Math.floor(time % 60);
+//     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+// }
+
+// video.addEventListener('timeupdate', updateProgress);
