@@ -18,11 +18,11 @@
         }
 
         function backward() {
-            video.currentTime -= 10;
+            video.currentTime -= 5;
         }
 
         function forward() {
-            video.currentTime += 10;
+            video.currentTime += 5;
         }
 
         function setVolume() {
